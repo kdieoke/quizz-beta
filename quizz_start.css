@@ -1,0 +1,130 @@
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+
+body{
+    background: rgb(27, 27, 27);
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.title{
+    position: absolute;
+
+    width: 70vw;
+
+    left: 15vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    background-image: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;    
+
+ 
+}
+
+.start{
+    position: relative;
+
+    width: 25vw;
+    height: 12vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    background-image: linear-gradient(120deg, #67fd9e 0%, #52c3fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    border: none;
+    z-index: 2;
+    
+}
+.S-box{
+    position: absolute;
+
+    width: 25vw;
+    height: 12vh;
+
+    top: 22vh;
+    left: 37.5vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    background:black;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.text{
+    position: absolute;
+
+    width: 90vw;
+
+    left: 5vw;
+    top: 35vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    background-image: linear-gradient(120deg, #67fd9e 0%, #52c3fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.start:hover{
+    position: relative;
+
+    width: 25vw;
+    height: 12vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    background-image: none;
+    background-clip: none;
+    -webkit-background-clip: none;
+    -moz-background-clip: none;
+    -moz-text-fill-color: none;
+    -webkit-text-fill-color: none;
+
+    border: none;
+    z-index: 2;
+}
+
+.S-box:hover{
+    position: absolute;
+
+    width: 25vw;
+    height: 12vh;
+
+    top: 22vh;
+    left: 37.5vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 20px;
+    z-index: 1;
+}

@@ -1,0 +1,326 @@
+:root{
+    --background-image: url("./images/girl_with_planet-ballons_night.jpg");
+
+    --pointer-left: 0px; 
+    --pointer-left-from: 0px;
+}
+
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+}
+body{
+    background: rgb(0, 0, 0);
+    align-items: center;
+    z-index: 1;
+}
+
+.img{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: var(--background-image);
+    background-size: cover;
+    z-index: 2;
+}
+
+.level{
+    position: relative;
+
+    height: 20px; 
+    width: 250px;
+    
+    top: 10px;
+    left: 10px;
+
+    background-image: linear-gradient(90deg, rgb(68,154,76) 0%, rgb(146,242,110) 25%, rgb(229,241,67) 50%,  rgb(246,158,54) 75%, rgb(236, 27, 27) 100%);
+    border: 2px solid rgb(25, 255, 186);
+    border-radius: 7px;
+    z-index: 3;
+}
+.pointer{
+    position: absolute;
+
+    top: -33px;
+    left: 0px;
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+
+    animation: changediff 4s ease-in forwards ;
+    z-index: 4;
+}
+.round{
+    position: absolute;
+
+    height: 40px; 
+    width: 240px;
+
+    top: 10px;
+    right: 10px;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid rgb(25, 255, 186);
+    z-index: 40;
+}
+.box{
+    position: absolute;
+
+    height: 400px;
+    width: 800px;
+
+    top: 150px;
+    left: 230px;
+
+    border-radius: 75px;
+    background:rgba(53, 52, 52, .6);
+    border: 5px solid rgb(25, 255, 186);
+
+    z-index: 3;
+} 
+
+.q{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Q-box{
+    position: absolute;
+
+    height: 60px;
+    width: 740px;
+    border-radius: 10px;
+
+    top: 40px;
+    left: 30px;
+
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 25px;
+
+    display: flex;  
+    align-items: center;
+    text-align: center;
+}
+
+.A-box{
+    position: absolute;
+
+    height: 80px;
+    width: 340px;
+    border-radius: 10px;
+
+    top: 160px;
+    left: 30px;
+
+    background: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 20px;
+
+    display: flex;  
+    align-items: center;
+    text-align: center;
+
+}
+
+.A-box:hover{ 
+    animation: getbiggerA .4s ease-in forwards;
+}
+
+.B-box{
+    position: absolute;  
+
+    height: 80px;
+    width: 340px;
+    border-radius: 10px;
+
+    top: 160px;
+    right: 30px;
+   
+
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 20px;
+    display: flex;  
+    align-items: center;
+    text-align: center;
+
+}
+
+.B-box:hover{ 
+    animation: getbiggerB .4s ease-in forwards;
+}
+
+.C-box{
+    position: absolute;
+
+    height: 80px;
+    width: 340px;
+    border-radius: 10px;
+
+    top: 280px;
+    left: 30px;
+
+    background: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 20px;
+
+    display: flex;  
+    align-items: center;
+    text-align: center;
+}
+
+.C-box:hover{ 
+    animation: getbiggerC .4s ease-in forwards;
+}
+
+.D-box{
+    position: absolute;  
+
+    height: 80px;
+    width: 340px;
+    border-radius: 10px;
+
+    top: 280px;
+    right: 30px;
+   
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 20px;
+    display: flex;  
+    align-items: center;
+    text-align: center;
+}
+.D-box:hover{ 
+    animation: getbiggerD .4s ease-in forwards;
+}
+
+p{
+    position: absolute;
+
+    color: white;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+
+    @keyframes changediff {
+    0%{
+    left: var(--pointer-left-from);
+    }
+    100%{
+    left: var(--pointer-left);
+    }
+    }
+
+
+
+    @keyframes getbiggerA{
+    0%{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50%{
+    height: 90px;
+    width: 350px;
+    top: 155px;
+    left: 25px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 21px;
+    }
+    100%{
+    height: 100px;
+    width: 360px;
+    top: 150px;
+    left: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 22px;
+    }
+    }
+    @keyframes getbiggerB{
+    0%{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50%{
+    height: 90px;
+    width: 350px;
+    top: 155px;
+    right: 25px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 21px;
+    }
+    100%{
+    height: 100px;
+    width: 360px;
+    top: 150px;
+    right: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 22px;
+    }
+    }
+
+    @keyframes getbiggerC{
+    0%{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50%{
+    height: 90px;
+    width: 350px;
+    top: 275px;
+    left: 25px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 21px;
+    }
+    100%{
+    height: 100px;
+    width: 360px;
+    top: 270px;
+    left: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 22px;
+    }
+    }
+
+    @keyframes getbiggerD{
+    0%{
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50%{
+    height: 90px;
+    width: 350px;
+    top: 275px;
+    right: 25px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 21px;
+    }
+    100%{
+    height: 100px;
+    width: 360px;
+    top: 270px;
+    right: 20px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 22px;
+    }
+    }
