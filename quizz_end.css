@@ -1,8 +1,4 @@
-html, body {
-    margin: 0; 
-    height: 100%; 
-    overflow: hidden;
-}
+
 body{
     background: rgb(0, 0, 0);
     align-items: center;
@@ -18,7 +14,7 @@ body{
     top: 5vh;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 4vh;
     text-align: center;
 
     background-image: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);
@@ -30,14 +26,20 @@ body{
 }
 
 .score{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#btn{
     position: relative;
 
-    width: 50vw;
-    height: 25vh;
+    width: 70vw;
+    height: 15vh;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-
+    font-size: 4vh;
+    text-align: center;
     background-image: linear-gradient(120deg, #67fd9e 0%, #52c3fc 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -52,11 +54,11 @@ body{
 .S-box{
     position: absolute;
 
-    width: 50vw;
-    height: 25vh;
+    width: 70vw;
+    height: 15vh;
 
     top: 25vh;
-    left: 25vw;
+    left: 15vw;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -66,70 +68,40 @@ body{
     z-index: 1;
 }
 
-.score:hover{
-    position: relative;
-
-    width: 50vw;
-    height: 25vh;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-
-    background-image: none;
-    background-clip: none;
-    -webkit-background-clip: none;
-    -moz-background-clip: none;
-    -moz-text-fill-color: none;
-    -webkit-text-fill-color: none;
-
-    border: none;
-    z-index: 2;
-}
-.S-box:hover{
-    position: absolute;
-
-    width: 50vw;
-    height: 25vh;
-
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    border-radius: 20px;
-    z-index: 1;
-}
-
 .score-revealed{
     position: absolute;
 
-    width: 51vw;
-    height: 26vh;
+    width: 70vw;
+    height: 15vh;
 
-    top: 25vh;
-    left: 25vw;
-    
+    top: 25vh; 
+    left: 15vw;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 3vh;
     border: 5px solid rgb(25, 255, 186);
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     border-radius: 20px;
-    z-index: 1;
+    z-index: 3;
+
 }
+
 
 .catchphrase{
     position: absolute;
 
-    height: 20vh;
+    height: 17vh;
     width: 80vw;
 
-    top: 60vh; 
+    top: 47vh; 
     left: 10vw;
 
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 3vh;
     z-index: 2;
 }
 
@@ -140,10 +112,10 @@ body{
     width: 90vw;
 
     left: 5vw;
-    top: 75vh;
+    top: 69vh;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 3.5vh;
     text-align: center;
 
     background-image: linear-gradient(120deg,#d57eeb 0%, #fccb90 100%);

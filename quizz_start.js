@@ -1,2 +1,2 @@
-let btn = document.getElementById("start")
-btn.addEventListener("click", function(){ location.assign("quizz_q.html")})
+let btn = document.getElementById("S-box")
+btn.addEventListener("click", function(){ location.replace("quizz_q.html")})
