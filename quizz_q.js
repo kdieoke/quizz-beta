@@ -887,7 +887,7 @@ let questions = {
             q: "Worum handelt es sich in der Literatur bei 'Neologismus' (reheorisches Mittel) ",
             points: 1,
             ansA: "Beschönigung", 
-            ansB: "Wortneuschöpfung",
+            ansB: "Wortneuschaffung",
             ansC: "Übertreibung",
             ansD: "Verniedlichung",
             correct: "B",
@@ -989,7 +989,7 @@ let questions = {
             ansB: "Deutschland",
             ansC: "China",
             ansD: "Russland",
-            correct: "B",
+            correct: "A",
             info: "Ende großer Kaiserreiche von 1912 zu 1945: Kaiserreich China, Kaiserreich Russland, Kaiserreich Deutschland, Kaiserreich Japan.",
             b_img: "caesarBueste.jpg"
         },
@@ -1075,7 +1075,7 @@ let questions = {
             ansB: "Raumläufer",
             ansC: "Sternenschwimmer",
             ansD: "Sternenwandler",
-            correct: "D",
+            correct: "A",
             b_img: "astronaut.jpg"
         },
         amount: 4
